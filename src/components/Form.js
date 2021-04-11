@@ -21,7 +21,7 @@ export default class Form extends React.Component {
           placeholder="username"
           required
         />
-        <button>Add card</button>
+        <button type="submit">Add card</button>
       </form>
     );
   }

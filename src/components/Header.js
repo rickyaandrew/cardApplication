@@ -15,7 +15,7 @@ class Header extends React.Component {
     return (
       <div>
         <div className="header">{this.props.title}</div>
-        <Form />
+        <Form onSubmit={this.addNewProfile} />
         <CardList profiles={this.state.profiles} />
       </div>
     );
