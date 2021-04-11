@@ -2,6 +2,7 @@ import React from 'react';
 const axios = require('axios').default;
 
 export default class Form extends React.Component {
+  state = { userName: '' };
   handleSubmit = async (event) => {
     event.preventDefault();
     const resp = await axios.get(
