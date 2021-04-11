@@ -1,11 +1,15 @@
 import React from 'react';
-import Card from './Card';
+import CardList from './CardList';
 
-const Header = (props) => (
-  <div>
-    <div className="header">{props.title}</div>
-    <Card />
-  </div>
-);
+class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        <div className="header">{this.props.title}</div>
+        <CardList />
+      </div>
+    );
+  }
+}
 
 export default Header;
